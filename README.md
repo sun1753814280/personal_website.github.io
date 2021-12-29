@@ -1,3 +1,3 @@
 # personal_website.github.io
 
-https://github.com/sun1753814280/personal_website.github.io.git
+https://sun1753814280.github.io/personal_website.github.io/

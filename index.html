@@ -20,7 +20,7 @@
         <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
             <a class="navbar-brand js-scroll-trigger" href="#page-top">
                 <span class="d-block d-lg-none">Zhangyu Sun</span>
-                <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/profile.jpg" alt="" /></span>
+                <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/joe.jpg" alt="" /></span>
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -31,7 +31,7 @@
 		    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#research">Research</a></li>
 		    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#publications">Publications</a></li>
 		    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#conferences">Conferences</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#awards">Awards and Honors</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#awards">Awards</a></li>
                     <!-- <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#photos">Photos</a></li>-->
 
                     
@@ -162,10 +162,34 @@
 		
             
 	    
-            <!-- Skills-->
+            <!-- Research-->
+
+            
+                                
+
+	    
             <section class="resume-section" id="research">
                 <div class="resume-section-content">
                     <h2 class="mb-5">Research</h2>
+
+
+			<div class="subheading  mb-1">TPRoGI: rock glacier inventory on the Tibetan Plateau using deep learning&nbsp;&nbsp;&nbsp;&nbsp;<a href="pdf/essd-16-5703-2024.pdf">Paper</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://doi.org/10.5281/zenodo.10732042">Data</a></div>
+
+                   	<p class="lead mb-5">Rock glaciers – periglacial landforms commonly found in high-mountain systems – are of significant scientific value for inferring the presence of permafrost, understanding mountain hydrology, and assessing climate impacts on high-mountain environments. However, inventories remain patchy in many alpine regions, and as a result they are poorly understood for some areas of High Mountain Asia such as the Tibetan Plateau. To address this gap, we compiled a comprehensive inventory of rock glaciers for the Tibetan Plateau, i.e., TPRoGI (v1.0), developed using an innovative deep learning method. This inventory consists of a total of 44 273 rock glaciers, covering approximately 6000 km2, with a mean area of 0.14 km2. They are predominantly situated at elevations ranging from 4000 to 5500 m a.s.l., with a mean of 4729 m a.s.l. They tend to occur on slopes with gradients between 10 and 25°, with a mean of 17.7°. Across the plateau, rock glaciers are widespread in the northwestern and southeastern areas, with dense concentrations in the Western Pamir and Nyainqêntanglha, while they are sparsely distributed in the inner part. Our inventory serves as a benchmark dataset, which will be further maintained and updated in the future. This dataset constitutes a significant contribution towards understanding, future monitoring, and assessment of permafrost on the Tibetan Plateau in the context of climate change. The dataset is available at https://doi.org/10.5281/zenodo.10732042 (Sun et al., 2024a).</p>
+                    <div class='div1 mb-3'>
+        				<img src="img/TPRoGI.png" alt="TPRoGI">
+    				</div>
+    				<p class="lead mb-5">Using deep learning to compile a comprehensive rock glacier inventory for the Tibetan Plateau</p>	
+
+
+                    <div class="subheading  mb-1">Using machine leanring to improve the estimation of weighted mean temperature&nbsp;&nbsp;&nbsp;&nbsp;<a href="pdf/remotesensing-13-01016.pdf">Paper</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="code/ML_Tm-main.zip">Code</a></div>
+
+                   	<p class="lead mb-5">As a crucial parameter in estimating precipitable water vapor from tropospheric delay, the weighted mean temperature (Tm) plays an important role in Global Navigation Satellite System (GNSS)-based water vapor monitoring techniques. However, the rigorous calculation of Tm requires vertical profiles of temperature and water vapor pressure that are difficult to acquire in practice. As a result, empirical models are widely used but have limited accuracy. In this study, we use three machine learning methods, i.e., random forest (RF), backpropagation neural network (BPNN), and generalized regression neural network (GRNN), to improve the estimation of empirical Tm in China. The basic idea is to use the high-quality radiosonde observations estimated Tm to calibrate and optimize the empirical Tm through machine learning methods. Validating results show that the three machine learning methods improve the Tm accuracy by 37.2%, 32.6%, and 34.9% compared with the global pressure and temperature model 3 (GPT3). In addition to the overall accuracy improvement, the proposed methods also mitigate the accuracy variations in space and time, guaranteeing evenly high accuracy. This study provides a new idea to estimate Tm, which could potentially contribute to the GNSS meteorology.</p>
+                    <div class='div1 mb-3'>
+        				<img src="img/ml_tm.png" alt="Improving Tm estimation with machine learning models">
+    				</div>
+    				<p class="lead mb-5">Improveing the estimation of weighted mean temperature by machine learning methods</p>
+
                     <div class="subheading  mb-1">GTrop: Global Tropospherc Empirical Model&nbsp;&nbsp;&nbsp;&nbsp;<a href="pdf/A global model for estimating tropospheric delay and weighted mean temperature developed with atmospheric reanalysis data from 1979 to 2017.pdf">Paper</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="code/GTrop.zip">Code</a></div>
                     
                    	<p class="lead mb-5">Precise modeling of tropospheric delay and weighted mean temperature (Tm) is critical for Global Navigation Satellite System (GNSS) positioning and meteorology. However, the model data in previous models cover a limited time span, which limits the accuracy of these models. Besides, the vertical variations of tropospheric delay and Tm are not perfectly modeled in previous studies, which affects the performance of height corrections. In this study, we used the European Centre for Medium-Range Weather Forecasts (ECMWF) ERA-Interim reanalysis from 1979 to 2017 to build a new empirical model. We first carefully modeled the lapse rates of tropospheric delay and Tm. Then we considered the temporal variations by linear trends, annual, and semi-annual variations and the spatial variations by grids. This new model can provide zenith hydrostatic delay (ZHD), zenith wet delay (ZWD), and Tm worldwide with a spatial resolution of 1° × 1°. We used the ECMWF ERA-Interim data and the radiosonde data in 2018 to validate this new model in comparison with the canonical GPT2w model. The results show that the new model has higher accuracies than the GPT2w model in all parameters. Particularly, this new model largely improves the accuracy in estimating ZHD and Tm at high-altitude (relative to the grid point height) regions.</p>
@@ -401,7 +425,7 @@
             <!-- Awards-->
             <section class="resume-section" id="awards">
                 <div class="resume-section-content">
-                    <h2 class="mb-5">Awards & Honors</h2>
+                    <h2 class="mb-5">Awards and Honors</h2>
                     <ul class="fa-ul mb-1">
 			<li class = "mb-1">
 			    <div class="flex-grow-1">
